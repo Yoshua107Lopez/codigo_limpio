@@ -37,7 +37,7 @@ class dataView(View):
 
         datos = data(nombre_cliente=nombre_cliente, total=total)
         datos.save()
-        return JsonResponse({'message': 'Success', 'id': data.id})
+        return JsonResponse({'message': 'Datos agregados con exito'})
 
     def put(self, request, id):
         jd = json.loads(request.body)
